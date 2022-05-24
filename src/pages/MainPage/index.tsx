@@ -7,7 +7,7 @@ export const MainPage: Page = () => {
     <>
       <NextSeo title="Main page" description="Main page description" />
 
-      <div>Main Page</div>
+      <div>Main Page 123</div>
     </>
   )
 }
