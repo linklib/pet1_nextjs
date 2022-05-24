@@ -23,19 +23,14 @@ export const allPostsQueryVars = {
 export const CommentsList: React.FC<CommentsListProps> = (props) => {
   const { variables } = props
 
-  const {
-    loading,
-    error,
-    data,
-    networkStatus,
-    fetchMore,
-  } = useCommentsConnectionQuery({
-    variables,
-    // Setting this value to true will make the component rerender when
-    // the "networkStatus" changes, so we are able to know if it is fetching
-    // more data
-    notifyOnNetworkStatusChange: true,
-  })
+  const { loading, error, data, networkStatus, fetchMore } =
+    useCommentsConnectionQuery({
+      variables,
+      // Setting this value to true will make the component rerender when
+      // the "networkStatus" changes, so we are able to know if it is fetching
+      // more data
+      notifyOnNetworkStatusChange: true,
+    })
 
   const loadingMorePosts = networkStatus === NetworkStatus.fetchMore
 
