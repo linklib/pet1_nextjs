@@ -22,7 +22,7 @@ export const MainPage: Page = () => {
             type="text"
             value={name}
             onChange={onChange}
-            placeholder="Your Name 1"
+            placeholder="Your Name 123"
           />
           <p>{name}</p>
         </form>
